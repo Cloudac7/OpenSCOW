@@ -1,5 +1,12 @@
 # @scow/docs
 
+## 1.4.3
+
+### Patch Changes
+
+- 897b5dd: 对 OpenSCOW 的 README.md 进行了修改，让用户更好能了解 OpenSCOW
+- 7c96613: 修改更名后的链接地址和文档描述
+
 ## 1.4.2
 
 ### Patch Changes
