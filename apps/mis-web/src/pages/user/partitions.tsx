@@ -106,30 +106,6 @@ export const PartitionsPage: NextPage<Props> = requireAuth(() => true)((props: P
           )
         }
       </div>
-      <div style={completedRequestCount < clusters.length
-        ? { marginBottom: "32px", marginTop: "48px" } : { marginBottom: "32px" }}
-      >
-        <Space direction="vertical" style={{ width: "100%" }}>
-          {clusters.map((cluster) => {
-            const data = renderData[cluster.id];
-            return (
-              data && data.length > 0 ? (
-                <Collapse defaultActiveKey={[cluster.id]}>
-                  <Panel
-                    header={getI18nConfigCurrentText(cluster.name, languageId)}
-                    collapsible="header"
-                    key={cluster.id}
-                  >
-                    <div key={cluster.id}>
-                      <JobBillingTable data={data} isUserPartitionsPage={true} />
-                    </div>
-                  </Panel>
-                </Collapse>
-              ) : null
-            );
-          })}
-        </Space>
-      </div>
 
       <div>
         {

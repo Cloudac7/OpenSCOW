@@ -12,3 +12,4 @@ dist
 version.json
 .pnpm-store
 .DS_Store
+scow-dist*
